@@ -4,105 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Bram Phone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <header>
-        <h1>Bengkel Online</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="title">Bram Phone</div>
+            <div class="menu" id="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
-            <img src="img/bengkel.png" alt="bengkel" width="200" height="200">
-            <p>Selamat datang di Bengkel Online, solusi terbaik untuk semua kebutuhan perawatan dan perbaikan kendaraan
-                Anda. Kami menghadirkan layanan bengkel yang praktis dan modern, memungkinkan Anda untuk mengakses
-                berbagai layanan perawatan kendaraan dari kenyamanan rumah Anda. Dengan teknisi berpengalaman dan
-                peralatan terbaru, kami memastikan setiap perbaikan dan perawatan dilakukan secara profesional dan
-                cepat. Fokus kami adalah memberikan pelayanan berkualitas tinggi dengan harga yang kompetitif, sehingga
-                kendaraan Anda tetap dalam kondisi prima tanpa harus repot mengunjungi bengkel.</p>
+        <section class="deskripsi_bengkel" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Selamat datang di Bram Phone</h2>
+                        <p>Kami adalah platform e-commerce yang menawarkan HP second berkualitas dan layanan perbaikan
+                            (service) HP terpercaya. Dengan harga terjangkau dan kualitas yang terjamin, kami siap
+                            memenuhi kebutuhan Anda akan smartphone terbaik dengan garansi dan layanan after-sales yang
+                            profesional.</p>
+                        <button>Selengkapnya</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/hp.png" alt="bengkel" height="1000px">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>LAYANAN KAMI</h2>
-            <table border="1" width="90%" height="110%">
-                <thead>
-                    <tr>
-                        <th>NO.</th>
-                        <th>Nama Layanan</th>
-                        <th>Deskripsi Layanan</th>
-                        <th>Harga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.</td>
-                        <td>Servis Berkala</td>
-                        <td>Perawatan rutin untuk menjaga performa kendaraan Anda tetap optimal dan mencegah kerusakan
-                            yang tidak diinginkan.</td>
-                        <td>Rp.50.000</td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Perbaikan Mesin</td>
-                        <td>Diagnosa dan perbaikan mesin untuk berbagai masalah, mulai dari gangguan kecil hingga
-                            kerusakan besar.</td>
-                        <td>Rp.150.000</td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td>Ganti Oli dan Filter</td>
-                        <td>Layanan penggantian oli dan filter secara berkala untuk memastikan kendaraan Anda berjalan
-                            dengan lancar.</td>
-                        <td>Rp.100.000</td>
-                    </tr>
-                    <tr>
-                        <td>4.</td>
-                        <td>Perbaikan Sistem Kelistrikan</td>
-                        <td>Perbaikan dan penggantian komponen listrik seperti aki, lampu, dan sistem kelistrikan
-                            lainnya.</td>
-                        <td>Rp.100.000</td>
-                    </tr>
-                    <tr>
-                        <td>5.</td>
-                        <td>Pemasangan dan Perbaikan Ban</td>
-                        <td>Layanan pemasangan ban baru, perbaikan ban bocor, dan rotasi ban untuk memperpanjang usia
-                            ban Anda.</td>
-                        <td>Rp.25.000</td>
-                    </tr>
-                    <tr>
-                        <td>6.</td>
-                        <td>Layanan Darurat 24/7</td>
-                        <td>Bengkel Online juga menyediakan layanan darurat, siap membantu Anda kapan saja dan di mana
-                            saja, sehingga Anda tidak perlu khawatir jika terjadi kerusakan mendadak.</td>
-                        <td>Rp.50.000</td>
-                    </tr>
-                    <tr>
-                        <td>7.</td>
-                        <td>Konsultasi Kendaraan Gratis</td>
-                        <td>Tim ahli kami siap memberikan konsultasi mengenai kondisi kendaraan Anda dan memberikan saran
-                            perawatan terbaik.</td>
-                        <td>Rp.100.000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Dengan layanan-layanan ini, kami siap melayani kebutuhan kendaraan Anda kapan saja dan di mana saja.
-                Pesan layanan sekarang dan biarkan kami yang datang ke lokasi Anda!</p>
+        <section class="layanan" id="about">
+            <div class="container">
+                <h2>LAYANAN KAMI</h2>
+                <table>
+                    <thead class="table">
+                        <tr>
+                            <th>NO.</th>
+                            <th>Nama Layanan</th>
+                            <th>Deskripsi Layanan</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Ganti LCD</td>
+                            <td>Penggantian layar HP dengan komponen berkualitas tinggi untuk memastikan tampilan
+                                kembali mulus tanpa masalah. Cocok untuk layar retak, pecah, atau tidak berfungsi.</td>
+                            <td>Rp 300.000 - Rp 800.000</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Ganti Baterai HP</td>
+                            <td>Penggantian baterai HP dengan baterai asli atau kompatibel berkualitas tinggi,
+                                memastikan masa pakai baterai lebih panjang dan kinerja optimal.</td>
+                            <td>Rp 150.000 - Rp 500.000</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Transfer Data dan Backup</td>
+                            <td>Layanan transfer data antar perangkat atau backup data, termasuk foto, video, dan
+                                kontak, untuk keamanan data Anda.</td>
+                            <td>Rp 50.000 - Rp 150.0000</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Lupa Pola atau Sandi</td>
+                            <td>Membantu membuka kunci HP yang lupa pola, PIN, atau sandi. Proses aman tanpa menghapus
+                                data.</td>
+                            <td>Rp 150.000 - Rp 300.000</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Upgrade Penyimpanan HP</td>
+                            <td>Menambah kapasitas penyimpanan internal HP dengan meng-upgrade chip memori atau menambah
+                                kartu memori eksternal (jika didukung). Layanan ini membantu memperbesar ruang
+                                penyimpanan untuk aplikasi, foto, video, dan dokumen tanpa mengurangi performa
+                                perangkat.</td>
+                            <td>Rp 300.000 - Rp 1.200.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Dengan berbagai layanan ini, kami siap memenuhi kebutuhan smartphone Anda dengan layanan terbaik.
+                    Kunjungi Bram Phone sekarang, dan biarkan kami yang membantu memperbaiki dan meningkatkan performa
+                    perangkat Anda!</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Kritik & Saran</h2>
-            <form action="">
+        <section class="products" id="services">
+            <div class="container">
+                <h2>PRODUK KAMI</h2>
+                <p>Kami juga menyediakan pilihan HP second dari berbagai merek terkenal seperti iPhone, Samsung, Xiaomi, Oppo, dan lainnya,
+                    dengan kualitas yang sudah teruji.</p>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="img\ip.jpg" alt="Product 1" height="400px">
+                        <h3>Iphone 15 Pro max</h3>
+                        <p>Second IBOX, 256 GB, BH 90%, fullset Harga: Rp 12.000.000</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="img\samsung.jpg" alt="Product 2" height="400px" >
+                        <h3>Samsung S23 Ultra</h3>
+                        <p>Second like new, 12 GB, 512 GB, fullset Harga: 15.000.000.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="img\poco.jpeg" alt="Product 3" height="400px">
+                        <h3>POCO F5</h3>
+                        <p>Second like new, 8 GB, 256 GB, fullset Harga:4.500.000</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="img\poco.jpeg" alt="Product 3" height="400px">
+                        <h3>POCO F5</h3>
+                        <p>Second like new, 8 GB, 256 GB, fullset Harga:4.500.000</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="img\poco.jpeg" alt="Product 3" height="400px">
+                        <h3>POCO F5</h3>
+                        <p>Second like new, 8 GB, 256 GB, fullset Harga:4.500.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form id="kritikForm">
                 <fieldset>
                     <legend>Kritik & Saran</legend>
                     <label for="name">Nama</label>
@@ -132,13 +171,23 @@
                     <button type="submit">Kirim</button>
                 </fieldset>
             </form>
+            <!-- Pop-up modal -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h3>Terima Kasih!</h3>
+                    <p>Kritik dan saran Anda telah berhasil dikirim.</p>
+                </div>
+            </div>
         </section>
+        
     </main>
 
     <footer>
-        <h5>Bengkel Online <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></h5>
+        <h5>Bram Phone <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></h5>
         <p>Warureja Tegal</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
